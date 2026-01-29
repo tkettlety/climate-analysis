@@ -1,10 +1,8 @@
-# Todo: Code is a bit unclear
+def fahrenheit_to_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) * (5 / 9)
+    return celsius
 
-def Fc(x):
-    Y = (x - 32) * (5 / 9)
-    return Y
-
-def FK(x):
-    y = Fc(x)
-    z = y + 273.15
-    return z
+def fahrenheit_to_kelvin(fahrenheit):
+    celsius = fahrenheit_to_celsius(fahrenheit)
+    kelvin = celsius + 273.15
+    return kelvin
